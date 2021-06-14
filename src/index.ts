@@ -1,6 +1,8 @@
 /// @ts-check
 /// <reference path="../node_modules/@types/p5/global.d.ts" />
 
+import Ball from "./Ball"
+
 document.addEventListener("contextmenu", (event) => event.preventDefault())
 
 export function setup() {
@@ -8,14 +10,14 @@ export function setup() {
     Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
     Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
   )
+
+  Ball.create(3)
 }
 
 export function draw() {
   background(20)
-  textAlign(CENTER, CENTER)
-  textSize(height / 10)
-  fill(200)
-  text("Hello World!", width / 2, height / 2)
+
+  Ball.draw()
 }
 
 export function keyPressed() {}

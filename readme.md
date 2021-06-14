@@ -1,7 +1,3 @@
-# ESBuild Template for p5.js
+# Just a pong
 
-- Gulp
-- TypeScript
-- Browser reloading
-
-[Use this template](https://github.com/ESBuildTemplates/ts-p5/generate)
+(from [p5.ts](https://github.com/ESBuildTemplates/p5.ts))
